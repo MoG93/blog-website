@@ -1,3 +1,5 @@
+@import "./header.css";
+@import "./intro.css";
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,22 +14,6 @@
     "mn"
     "ft";
 }
-
-header{
-    grid-area: hd;
-    border: 3px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-.nav{
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-    font-size: 22px;
-}
-
 main{
     grid-area: mn;
         
@@ -43,15 +29,4 @@ main{
     .layout{
         grid-template-rows: 100px auto 80px;
     }
-    .header{
-        flex-direction:column;
-    }
-}
-.intro{
-margin-top: 50px;
-margin-bottom: 50px;
-}
-.container{
-    margin-top: 10px;
-    margin-bottom: 10px;
 }

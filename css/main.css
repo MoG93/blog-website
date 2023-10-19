@@ -1,3 +1,4 @@
+@import "./header.css";
 
 .grid-container{
     display: grid;
@@ -31,27 +32,13 @@
     "ft ft"
     ;
 }
-header{
-    grid-area: hd;
-    border: 3px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-.nav{
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-    font-size: 22px;
-}
 .sidebar{
     grid-area: sd;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px;
 }
 main{
     grid-area: mn;
@@ -65,7 +52,7 @@ footer{
 }
 @media screen and (max-width: 425px) {
     .layout{
-        grid-template-rows: 100px auto auto 80px;
+        grid-template-rows: 100px auto auto 40px;
         grid-template-columns: auto;
         grid-template-areas: 
         "hd"
@@ -73,8 +60,9 @@ footer{
         "mn"
         "ft";
     }
-    .header{
-        flex-direction:column
+    .sidebar{
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 p{
