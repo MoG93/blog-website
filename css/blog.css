@@ -22,6 +22,9 @@ main{
 .footer{
     grid-area: ft;
     text-align: center;
+}
+em{
+    color: blue;
 }   
 @media screen and (max-width: 425px) {
     .layout{
