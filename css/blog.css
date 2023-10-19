@@ -15,14 +15,12 @@
     "ft";
 }
 main{
-    grid-area: mn;
-        
+    grid-area: mn;    
     padding: 5px;
     text-align: center;
 }
 .footer{
     grid-area: ft;
-    
     text-align: center;
 }   
 @media screen and (max-width: 425px) {
